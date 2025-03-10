@@ -1,0 +1,51 @@
+.userbody{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    /* margin: 10px; */
+    justify-items: center;
+    align-content: center;
+}
+.addicon{
+    width: 290px;
+    background: rgb(240, 240, 240);
+    /* border: 1px solid grey; */
+    margin: 30px 0;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    padding: 5px;
+    aspect-ratio: 2/1.1;
+    display: grid;
+
+    border-radius: 20px;
+    border: none;
+    box-shadow: 4px 6px 20px #909090;
+}
+.fab{
+    /* background: linear-gradient(120deg,
+    rgb(255, 0, 76) 0%,
+     rgb(255, 15, 87) 20%, 
+     rgb(255, 38, 103) 40%, 
+     rgb(255, 63, 121) 60%, 
+     rgb(255, 16, 87) 75%, 
+     rgb(255, 16, 87) 80%, 
+     rgb(255, 0, 76) 100%); */
+     background: #000;
+    position: fixed !important;
+    bottom: 15px ;
+    right: 15px ;
+}
+.fab:hover{
+    /* background: linear-gradient(120deg,
+    rgb(255, 0, 76) 0%,
+     rgb(255, 15, 87) 20%, 
+     rgb(255, 38, 103) 40%, 
+     rgb(255, 63, 121) 60%, 
+     rgb(255, 16, 87) 75%, 
+     rgb(255, 16, 87) 80%, 
+     rgb(255, 0, 76) 100%); */
+     background: #000 !important;
+}
+h3{
+    margin: 30px 30px 10px 30px;
+}

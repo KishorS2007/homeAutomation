@@ -1,0 +1,40 @@
+.name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: start; */
+    /* align-items: center; */
+}
+.name :where(input,h3){
+    margin: 0;
+    width: 100%;
+}
+
+.type{
+    margin-top:15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.type :where(.select,h3){
+    margin: 0;
+    width: 100%;
+}
+.select{
+    /* width: 100%  !important; */
+    width: 200px !important;
+}
+.submit{
+    color: white  !important;
+    background: #000 !important;
+    margin-top: 20px !important;
+}
+
+ h3{
+    align-self:center;
+}
+
+
+/* @media screen and (max-width:470px) {
+    .modal{
+        width: 100vw !important;
+    }
+} */

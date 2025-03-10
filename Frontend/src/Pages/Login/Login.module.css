@@ -1,0 +1,261 @@
+.loginbody{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 's w';
+    width: 60vw;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+    box-shadow:4px 6px 20px rgb(77, 77, 77);
+    /* grid-auto-flow: row; */
+    /* border: none; */
+    /* overflow-y: scroll; */
+}
+
+.signin{
+    grid-area: s;
+   /* height: 100%; */
+   width: 100%;
+   border-radius:0px 10px 10px 0;
+   /* overflow-y: scroll; */
+}
+.welcome{
+    grid-area: w;
+    border-radius:0px 10px 10px 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(255, 69, 124); */
+    background: linear-gradient(120deg,
+     rgb(255, 0, 76) 0%,
+      rgb(255, 15, 87) 20%, 
+      /* rgba(255, 63, 120,0.9) 25%,  */
+      rgb(247, 25, 92) 30%, 
+      rgb(238, 18, 84) 50%, 
+      rgb(255, 11, 85) 60%, 
+      rgb(255, 63, 121) 65%, 
+      rgba(255, 63, 120,0.9) 70%, 
+      rgb(255, 16, 87) 75%, 
+      rgb(255, 16, 87) 80%, 
+      rgb(255, 0, 76) 100%);
+}
+.innerbody{
+    /* border: 1px solid black; */
+    margin: 30px 30px 30px 30px;
+
+}
+.second{
+    /* grid-area: w !important; */
+    height: 60vh; 
+    overflow-y: scroll;
+    margin: 30px 10px 30px 30px;
+    /* width */
+}
+.signup{
+    /* margin-top: 30px; */
+    grid-area: w !important;
+    /* padding: 10px; */
+}
+.underspace{
+    height: 2vh;
+}
+.upperspace{
+    height: 5vh;
+}
+.top {
+    grid-area: s !important;
+    border-radius: 10px 0 0 10px;
+    z-index: 5;
+}
+.signupbutton{
+    margin-bottom: 5vh !important;
+}
+.second::-webkit-scrollbar {
+    width: 10px !important;
+    /* margin-left: 10px !important; */
+  }
+  
+  /* Track */
+  .second::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .second::-webkit-scrollbar-thumb {
+    background: linear-gradient(120deg,
+    rgb(255, 0, 76) 0%,
+     rgb(255, 15, 87) 20%, 
+     rgb(255, 38, 103) 40%, 
+     rgb(255, 63, 121) 60%, 
+     rgb(255, 16, 87) 75%, 
+     rgb(255, 16, 87) 80%, 
+     rgb(255, 0, 76) 100%);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .second::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(120deg,
+    rgb(255, 0, 76) 0%,
+     rgb(255, 15, 87) 20%, 
+     rgb(255, 38, 103) 40%, 
+     rgb(255, 63, 121) 60%, 
+     rgb(255, 16, 87) 75%, 
+     rgb(255, 16, 87) 80%, 
+     rgb(255, 0, 76) 100%);
+  }
+
+
+.signin h5 , .signin p{
+    text-align: left;
+}
+label{
+    text-align:start;
+}
+.signin p{
+    margin-top: 20px !important;
+}
+.signin button{
+    background: linear-gradient(120deg,
+    rgb(255, 0, 76) 0%,
+     rgb(255, 15, 87) 20%, 
+     rgb(255, 38, 103) 40%, 
+     rgb(255, 63, 121) 60%, 
+     rgb(255, 16, 87) 75%, 
+     rgb(255, 16, 87) 80%, 
+     rgb(255, 0, 76) 100%);
+    color: white;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.welcomeinnerbody{
+    margin: 9rem 0;
+}
+.welcomeinnerbody *{
+    color: white;
+}
+.welcomeinnerbody button{
+    color: white !important;
+    outline: white !important;
+    border-color: white;
+    border-radius: 18px;
+}
+input{
+    background-color: rgb(243, 243, 243) !important;
+}
+@media screen and (max-width:1000px) {
+    .loginbody{
+        width: 80vw;
+    }
+}
+@media screen and (max-width:750px) {
+    .loginbody{
+        /* flex-direction: column; */
+        /* glyph-orientation-vertical: ; */
+        display: grid;
+        grid-template-rows: 30vh 60vh !important;
+        grid-template-columns: 1fr !important;
+        grid-template-areas:'w'
+        's';
+        /* flex-wrap: wrap; */
+        /* height: fit-content; */
+        /* position: relative; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-60%);
+        /* position: static; */
+        /* transform: none; */
+        margin:5rem auto;
+
+    }
+    .innerbody{
+        margin-top: 0;
+    }
+    .welcome{
+        height: 100%;
+        border-radius: 10px 10px 0 0 ;        
+    }
+    .welcomeinnerbody{
+        /* margin:5vh 0 0 0; */
+
+        /* height: 200px; */
+        height: 100%;   
+    }
+    .welcomeinnerbody h4{
+        margin-top: 5vh;
+    }
+    .innerbody , .welcomeinnerbody{
+        margin: 10px;
+    }
+    .signup{
+        grid-area: s !important;
+    
+    }
+    .top {
+        grid-area: w !important;
+        /* border-radius: 10px 0 0 10px; */
+        /* z-index: 5; */
+    }
+}
+@media screen and (max-width:450px) {
+    .loginbody{
+        width: 95vw;
+        /* height: 90vh; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-65%);
+    }
+}
+@media screen and (max-width:400px) {
+    .loginbody{
+        width: 100vw;
+        /* height: 85vh; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-65%);
+    }
+}
+.Loginanimation{
+    animation-name:login ;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    /* perspective: 0px;
+    transform-style: preserve-3d; */
+}
+.signupanimation{
+    animation-name:signup ;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes login{
+    from{
+       
+        transform:translateX(100vw) rotate3d(2,7,4,125deg) scale(3);
+    }
+}
+@keyframes signup{
+    from{
+        /* perspective: 100px; */
+        transform:translateX(-150vw) rotate3d(2,7,4,-125deg)  scale(3);
+    }
+}
+/* 
+@keyframes login{
+    from{
+        transform:translateX(100vw) rotate3d(2,3,4,45deg) scale(2);
+    }
+}
+@keyframes signup{
+    from{
+        transform:translateX(-100vw) rotate3d(-2,-3,-4,45deg) scale(2);
+    } 
+} */
